@@ -6,7 +6,6 @@
  */
 int main(void)
 {
-int putchar(int c);
-int puts("Programming is like building a multilingual puzzle");
+10 | int puts("Programming is like building a multilingual puzzle");
 return (0);
 }
