@@ -3,7 +3,7 @@
  * main - Entry point
  * return: 0 (success)
  */
-int main(int)
+int main()
 {
 	/*prints exactly '...'*/
 	printf("with proper grammar, but the outcome is a piece of art,\n");
