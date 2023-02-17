@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - Entry point 
+ * main - Entry point
  * return: 0 (success)
  */
-int main(void)
+int main (void)
 {
 	/*prints exactly '...'*/
 	printf("with proper grammar, but the outcome is a piece of art,\n");
