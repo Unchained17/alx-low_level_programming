@@ -1,11 +1,12 @@
 #include <stdio.h>
 /**
- * main - printf
- * if other error
- * return: 0
+ * main - Entry point
+ * 
+ * print exactly with proper grammar, but the outcome is a piece of art, as output
+ * 
+ * return: 0 (success)
  */
-
-int main(void)=0
+int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
