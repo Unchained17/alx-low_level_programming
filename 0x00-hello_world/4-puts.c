@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
- * main - Output of characters
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-10 | int puts("Programming is like building a multilingual puzzle");
-return (0);
+	puts("\"Programming is like building a multilingual puzzle"); /*puts - output of characters and strings*/
+	return (0);
 }
