@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * print text in quotes
+ * main - A printf c-program
  * return: 0
  */
 int main(void)
