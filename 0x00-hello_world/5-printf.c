@@ -3,7 +3,7 @@
  * main - Entry point
  * return: 0
  */
-int foo(void)
+int main foo(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
