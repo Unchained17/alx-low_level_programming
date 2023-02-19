@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - Entry point for a function
+ * main - The main function entry point
  *
- * return - create executable
+ * Description - text quote
  */
 
 void main(void)
