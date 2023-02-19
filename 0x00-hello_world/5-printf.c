@@ -2,11 +2,11 @@
 /**
  * main - The main function entry point
  *
- * Return: 'c' for success
+ * Return: (0) for success
  */
 
-char main(void)
+int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art, \n");
-	return ('c');
+	return (0);
 }
