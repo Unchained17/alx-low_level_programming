@@ -1,10 +1,11 @@
 #include <stdio.h>
 /**
- * main - print inside quotes
- * return: 0
+ * main - Entry point for a function
  */
-int main(void)
+
+void main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art,\n");
-	return (0);
+	char f = 55;
+
+	printf("with proper grammar, but the outcome is a piece of art, \n");
 }
