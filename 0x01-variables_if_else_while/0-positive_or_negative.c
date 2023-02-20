@@ -2,13 +2,9 @@
 #include <time.h>
 #include <stdlib.h>
 /**
- * Main - if, else if, else
+ * main - The main function. Returns either positive, negative or zero
  *
- * if n is bigger than zero program prints value is positive
- * else if n is zero program prints value is zero
- * else if n is smaller than zero program prints value is negative
- *
- * Return: (0) success
+ * Return: (0)
  */
 int main(void)
 {
@@ -17,13 +13,13 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	if(n>0)
+	if (n > 0)
 	{
-		printf("%d is positive", n);
+		printf("%d is positive\n", n);
 	}
-	else if(n==0)
+	else if (n == 0)
 	{
-		printf("%d is zero", n);
+		printf("%d is zero\n", n);
 	}
 	else
 	{
