@@ -3,14 +3,12 @@
  * main - Entry point
  * Return: (0)
  */
-char main(void)
+int main(void)
 {
 	char c;
 
 	for (c = 'a'; c <= 'z'; c++)
-	{
 	putchar(c);
-	}
 	putchar('\n');
 	return (0);
 }
