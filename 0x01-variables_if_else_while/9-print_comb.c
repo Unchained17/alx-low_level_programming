@@ -13,8 +13,8 @@ int main(void)
 	if (y != '9')
 	{
 	putchar(',');
-	}
 	putchar(' ');
+	}
 	}
 	putchar('\n');
 	return (0);
