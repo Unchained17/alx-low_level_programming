@@ -1,18 +1,18 @@
 #include <stdio.h>
-#include <string.h>
 #include "main.h"
 /**
- * print_alphabet - Entry point
- * Return: void
+ * main - The print alphabet
+ * Print_alphabet: prototype function
+ * Return: (0)
  */
 void print_alphabet(void)
 {
-	char z = 'a';
+	char x='a';
 
-	while (z <= 'z')
+	while (x <= 'z')
 	{
-	z++;
-	putchar(z);
+	x++;
+	putchar(x);
 	putchar('\n');
 	}
 	return;
