@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - The print alphabet
- * Print_alphabet: prototype function
+ * print_alphabet - Entry point
  * Return: (0)
  */
-void print_alphabet(void)
+int main(void)
 {
 	char x='a';
 
