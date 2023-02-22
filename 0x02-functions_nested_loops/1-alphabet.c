@@ -1,14 +1,19 @@
 #include <stdio.h>
+#include <string.h>
+#include "main.h"
 /**
- * main - Entry point
- * Return: (0)
+ * print_alphabet - Entry point
+ * Return: void
  */
-int main(void)
+void print_alphabet(void)
 {
-	char c;
+	char z = 'a';
 
-	for (c = 'a'; c <= 'z'; c++)
-	putchar(c);
+	while (z <= 'z')
+	{
+	z++;
+	putchar(z);
 	putchar('\n');
-	return (0);
+	}
+	return;
 }
