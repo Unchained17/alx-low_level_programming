@@ -1,21 +1,20 @@
 #include "main.h"
 /**
  * print_alphabet_x10 - Function name
- * Return void
+ * Return: (void)
  */
 void print_alphabet_x10(void)
 {
-	int i = 0;
-	char c = 'a';
+	int i;
+	char c;
 
-	do {
-		i++;
-		
+	for (i = 0; i <= 9; i++)
+	{
 		for (c = 'a'; c <= 'z'; c++)
 		{
 			_putchar(c);
 		}
 		_putchar('\n');
-	} while (i <= 9);
+	}
 	return;
 }
