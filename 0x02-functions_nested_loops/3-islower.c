@@ -2,7 +2,7 @@
 /**
  * _islower - Function name
  * @c: local variable
- * Return: (1) 
+ * Return: (1)
  */
 int _islower(int c)
 {
@@ -10,4 +10,4 @@ int _islower(int c)
 		return (1);
 	else
 		return (0);
-}	
+}
