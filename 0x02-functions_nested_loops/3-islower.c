@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _islower - Function name
+ * @c: local variable
  * Return: (1) 
  */
 int _islower(int c)
