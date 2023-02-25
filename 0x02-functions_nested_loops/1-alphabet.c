@@ -1,18 +1,16 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * print_alphabet - Main function prototype
+ * main - function name
  * Return: (0)
  */
-int print_alphabet(void)
+void print_alphabet(void)
 {
         char x = 'a';
-
-        while (x <= 'z')
+        do 
 	{
-        x++;
-        putchar(x);
-        putchar('\n');
-	}
-	return (0);
+		x++;
+                _putchar(x);
+		_putchar('\n');
+        } while (x <= 'z');
+	return;
 }
