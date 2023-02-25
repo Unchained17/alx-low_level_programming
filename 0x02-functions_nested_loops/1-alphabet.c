@@ -1,16 +1,13 @@
 #include "main.h"
 /**
- * main - function name
+ * print_alphabet - function name
  * Return: (0)
  */
 void print_alphabet(void)
 {
-        char x = 'a';
-        do 
-	{
-		x++;
-                _putchar(x);
-		_putchar('\n');
-        } while (x <= 'z');
-	return;
+	char x;
+
+	for (x = 'a'; x <= 'z'; x++)
+		_putchar(x);
+	_putchar('\n');
 }
