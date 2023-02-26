@@ -1,11 +1,13 @@
 #include "main.h"
 /**
  * add - function that adds two integers and returns the result
- * Return: result
+ * @int: The data type
+ * Return: (result)
  */
-int add(int num_1, int num_2)
+int add(int, int)
 {
-	int result;
+	int num_1, num_2, result;
+
 	result = num_1 + num_2;
 	return (result);
 }
