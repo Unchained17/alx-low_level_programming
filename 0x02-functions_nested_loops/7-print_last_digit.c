@@ -2,15 +2,15 @@
 /**
  * print_last_digit - Function that prints the last digit of a number.
  * @n: Initialized variable
- * Return: (final)
+ * Return: (fd)
  */
 int print_last_digit(int n)
 {
-	int final;
+	int f_d;
 
-	final = n % 10;
-	if (final < 0)
-		final = final * -1;
-	_putchar(final);
-	return (final);
+	f_d = n % 10;
+	if (f_d < 0)
+		f_d = f_d * -1;
+	_putchar(f_d);
+	return (f_d);
 }
