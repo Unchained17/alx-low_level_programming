@@ -6,26 +6,27 @@
  */
 void print_to_98(int n)
 {
-	int x;
-
-	for (x = '0'; x <= '9'; x++)
-	{
-		for (n = '0'; n <= '9'; n++)
-		{
-			if (x <= 9)
-			{
-				_putchar(x);
-				_putchar(44);
-				_putchar(32);
-			}
-			else
-			{		
-				_putchar(x);
-				_putchar(n);
-				_putchar(44);
-				_putchar(32);
-			}
-		}
-	}
-	_putchar('\n');
+	int x = '0';
+    
+    	do
+    	{
+        	for (n = '0'; n <= '9'; n++)
+        	{
+                	if (x <= 9)
+                	{
+                        	_putchar(x);
+                        	_putchar(44);
+                        	_putchar(32);
+                	}
+                	else
+                	{
+                        	_putchar(x);
+                        	_putchar(n);
+                        	_putchar(44);
+                        	_putchar(32);
+                	}
+        	}
+        	x++;
+    	} while (x <= '9');
+    	_putchar('\n');
 }
