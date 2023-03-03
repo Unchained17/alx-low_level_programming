@@ -20,6 +20,9 @@ int main(void)
 			}
 		}
 		x++;
-	} while (x <= '9');
+	} while (x <= '7');
+	putchar('8');
+	putchar('9');
+	putchar('\n');
 	return (0);
 }
