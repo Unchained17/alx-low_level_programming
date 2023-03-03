@@ -21,7 +21,7 @@ int main(void)
 			}
 		}
 		x++;
-		putchar('\n');
 	} while (x <= '9');
+	putchar('\n');
 	return (0);
 }
