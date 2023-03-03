@@ -7,8 +7,9 @@ int main(void)
 {
 	int x = '0';
 	int y;
-
-	do {
+	
+	do 
+	{
 		for (y = x + 1; y <= '9'; y++)
 		{
 			if (x != y)
