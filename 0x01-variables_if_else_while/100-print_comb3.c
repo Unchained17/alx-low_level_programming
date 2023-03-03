@@ -21,9 +21,7 @@ int main(void)
 			}
 		}
 		x++;
-	} while (x <= '7');
-	putchar('8');
-	putchar('9');
+	} while (x <= '8');
 	putchar('\n');
 	return (0);
 }
