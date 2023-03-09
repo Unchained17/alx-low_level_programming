@@ -16,12 +16,14 @@ int main(void)
 			{
 				putchar(x);
 				putchar(y);
-				putchar(',');
-				putchar(' ');
 			}
+			if (x == '8' && y == '9')
+			break;
+			putchar(',');
+			putchar(' ');
 		}
 		x++;
-	} while (x <= '8');
+	} while (x <= '9');
 	putchar('\n');
 	return (0);
 }
