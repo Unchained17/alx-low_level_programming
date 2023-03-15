@@ -16,14 +16,10 @@ char *create_array(unsigned int size, char c)
 	{
 		return (0);
 	}
-	else if (pa == 0)
-	{
-		return (pa);
-	}
 	pa = malloc(size * sizeof(char));
 	do {
 		*(pa + j) = c;
 		j++;
 	} while (j < size);
-	return ((char *)pa);
+	return ((void *)pa);
 }
