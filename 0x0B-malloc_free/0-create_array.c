@@ -5,21 +5,25 @@
  * and initializes it with a specific char.
  * @size: array length
  * @c: character
- * Return: (c) success
+ * Return: (pa) success
  */
 char *create_array(unsigned int size, char c)
 {
 	unsigned int j = 0;
-	char *pa = {"c"};
+	char *a;
 
 	if (size == 0)
 	{
 		return (0);
 	}
-	pa = malloc(size * sizeof(char));
+	a = (void *)malloc(size * sizeof(char));
+	if (a == 0)
+	{
+		return (0);
+	}
 	do {
-		*(pa + j) = c;
+		*(a + j) = c;
 		j++;
 	} while (j < size);
-	return ((void *)pa);
+	return ((char *)a);
 }
