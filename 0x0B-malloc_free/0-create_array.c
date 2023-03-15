@@ -12,15 +12,18 @@ char *create_array(unsigned int size, char c)
 	unsigned int j = 0;
 	char *pa = {"c"};
 
-	pa = malloc(size * sizeof(char));
-	while (j < size)
-	{
-		*(pa + j) = c;
-		j++;
-	}
-	if (size == 0 || pa == 0)
+	if (size == 0)
 	{
 		return (0);
 	}
+	else if (pa == 0)
+	{
+		return (pa);
+	}
+	pa = malloc(size * sizeof(char));
+	do {
+		*(pa + j) = c;
+		j++;
+	} while (j < size);
 	return (pa);
 }
