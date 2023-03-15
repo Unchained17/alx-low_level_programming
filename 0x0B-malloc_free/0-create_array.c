@@ -20,10 +20,10 @@ char *create_array(unsigned int size, char c)
 	{
 		return (pa);
 	}
-	pa = (char *)malloc(size * sizeof(char));
+	pa = malloc(size * sizeof(char));
 	do {
 		*(pa + j) = c;
 		j++;
 	} while (j < size);
-	return (pa);
+	return ((char *)pa);
 }
