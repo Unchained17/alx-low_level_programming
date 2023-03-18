@@ -8,3 +8,5 @@
 0x06-pointers arrays strings
 
 0x0A-argc argv
+0x0B-malloc free
+0x0C-more malloc free
