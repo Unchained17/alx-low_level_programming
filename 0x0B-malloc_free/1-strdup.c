@@ -9,7 +9,7 @@
 char *_strdup(char *str)
 {
 	int j = 0, x = 1;
-	char* p;
+	char *p;
 
 	if (str == 0)
 	{
@@ -19,14 +19,14 @@ char *_strdup(char *str)
 	{
 		x++;
 	}
-	p = (char*)malloc((sizeof(char) * j) + 1);
+	p = (char *)malloc((sizeof(char) * j) + 1);
 	if (p == 0)
 		return (0);
-	while (j < x)
+	while (j < x || x < j)
 	{
 		*(p + j) = *(str + j);
 		j++;
 	}
 	*(p + j) = '\0';
-	return((char*)p);
+	return ((char *)p);
 }
