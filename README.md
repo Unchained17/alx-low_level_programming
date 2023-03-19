@@ -6,7 +6,9 @@
 0x04-more functions nested loops
 0x05-pointers arrays strings
 0x06-pointers arrays strings
-
+0x07-pointers arrays strings
+0x08-recursion
+0x09-static libraries
 0x0A-argc argv
 0x0B-malloc free
 0x0C-more malloc free
