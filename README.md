@@ -12,3 +12,5 @@
 0x0A-argc argv
 0x0B-malloc free
 0x0C-more malloc free
+0x0D-preprocessor
+0x0F-function pointers
