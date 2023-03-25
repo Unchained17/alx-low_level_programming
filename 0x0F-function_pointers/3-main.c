@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	num1 = atoi(argv[1]);
 	po = argv[2];
 	num2 = atoi(argv[3]);
-	if ((get_op_func(po) == NULL) || (po[1] != '\0'))
+	if ((get_op_func(po) == 0) || (po[1] != 0))
 	{
 		printf("Error\n");
 		exit(99);
