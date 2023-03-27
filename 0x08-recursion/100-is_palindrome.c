@@ -6,8 +6,7 @@ int str_len(char *);
 /**
  * str_len - returns string length
  * @s: string
- * @n: length
- * Return: (n)
+ * Return: length
  */
 int str_len(char *s)
 {
