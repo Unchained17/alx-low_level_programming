@@ -5,7 +5,7 @@ int _prime_(int, int);
  * is_prime_number - calling function that returns 1 if the input integer is
  * a prime number, otherwise return 0
  * @n: number
- * Return: (_prime(n, 2))
+ * Return: (_prime_(n, 2))
  */
 int is_prime_number(int n)
 {
@@ -19,7 +19,7 @@ int is_prime_number(int n)
  * _prime_ - checks for prime number
  * @n: number
  * @i: iterator
- * Return (0) || (1)
+ * Return: (_prime_(n, (i + 1)))
  */
 int _prime_(int n, int i)
 {
@@ -35,5 +35,5 @@ int _prime_(int n, int i)
 	{
 		return (1);
 	}
-	return _prime_(n, i + 1);
+	return (_prime_(n, (i + 1)));
 }
