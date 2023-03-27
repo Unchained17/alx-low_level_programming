@@ -2,10 +2,25 @@
 #include <stddef.h>
 #include <string.h>
 int comp_(char*, int, int);
+int str_len(char *);
+/**
+ * str_len - returns string length
+ * @s: string
+ * @n: length
+ * Return: (n)
+ */
+int str_len(char *s)
+{
+	if (*s == '\0')
+	{
+		return (0);
+	}
+	return (1 + str_len(s + 1));
+}
 /**
  * is_palindrome -recursive function that returns 1 if a string is a palindrome
  * and 0 if not.
- * @s: string / array of characters
+ * @s: sitring / array of characters
  * Return: (1) || (0)
  */
 int is_palindrome(char *s)
@@ -14,7 +29,7 @@ int is_palindrome(char *s)
 	{
 		return (0);
 	}
-	return (comp_(s, 0, strlen(s) - 1));
+	return (comp_(s, 0, str_len(s) - 1));
 }
 /**
  * comp_ - compares characters in string
