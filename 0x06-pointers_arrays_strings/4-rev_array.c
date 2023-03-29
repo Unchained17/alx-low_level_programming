@@ -9,10 +9,11 @@ void reverse_array(int *a, int n)
 	int x, y;
 
 	x = n - 1;
-	do {
+	while (x >= (n / 2))
+	{
 		y = a[n - 1 - x];
 		a[n - 1 - x] = a[x];
 		a[x] = y;
 		x--;
-	} while (x >= (n / 2));
+	}
 }
