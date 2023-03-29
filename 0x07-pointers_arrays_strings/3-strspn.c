@@ -8,24 +8,19 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int l_1 = 0, l_2 = 0, prefix, short_len, j;
-
-	while (s[l_1] < '\0' && accept[l_2] < '\0')
+	unsigned int l_1 = 0, l_2 = 0, prefix = 0, j;
+	
+	while (*(s + l_1) != '\0' && *(accept + l_2) != '\0')
 	{
 		l_1++;
 		l_2++;
 	}
-	short_len = l_1 < l_2 ? l_1 : l_2;
 	j = 0;
-	prefix = 0;
-	while (j < short_len)
+	while (j < l_1 && j < l_2)
 	{
-		if (s[j] == accept[j])
+		if (*(s + j) == *(accept + j))
 		{
 			prefix++;
-		}
-		else
-		{
 			break;
 		}
 		j++;
