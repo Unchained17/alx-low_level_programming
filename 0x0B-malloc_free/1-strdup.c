@@ -11,18 +11,22 @@ char *_strdup(char *str)
 	int x, j = 0;
 	char *r;
 
+	if (str == 0)
+		return (0);
 	while (*(str + j) != '\0')
 	{
 		j++;
 	}
 	r = (char *)malloc(sizeof(char) * (j + 1));
-	if (r == 0 || str == 0)
+	if (r == 0)
 	{
 		return (0);
 	}
-	for (x = 0; *(str + x) != '\0'; x++)
+	x = 0;
+	while (*(str + x) != '\0')
 	{
-	       *(r + x) = *(str + x);
+		*(r + x) = *(str + x);
+		x++;
 	}
 	return (r);
 }
