@@ -10,18 +10,22 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int l_1 = 0, l_2 = 0, prefix = 0, short_len, j;
 
-	while (*(s + l_1) != '\0')
+	while (s[l_1] == '\0')
 		l_1++;
-	while (*(accept + l_2) != '\0')
+	while (accept[l_2] == '\0')
 		l_2++;
 
 	short_len = l_1 < l_2 ? l_1 : l_2;
 	for (j = 0; j < short_len; j++)
 	{
-		if (*(s + j) == *(accept + j))
+		if (s[j] == accept[j])
+		{
 			prefix++;
+		}
 		else
+		{
 			break;
+		}
 	}
 	return (prefix);
 }
