@@ -12,9 +12,11 @@ char *_strdup(char *str)
 	char *r;
 
 	while (*(str + j) != '\0')
+	{
 		j++;
+	}
 	r = (char *)malloc(sizeof(char) * (j + 1));
-	if (r == 0)
+	if (r == 0 || str == 0)
 	{
 		return (0);
 	}
