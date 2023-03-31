@@ -8,7 +8,7 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int l_1 = 0, l_2 = 0, prefix = 0, j;
+	unsigned int l_1 = 0, l_2 = 0, prefix = 0, bytes = 0, j;
 	
 	while (*(s + l_1) != '\0' && *(accept + l_2) != '\0')
 	{
@@ -21,9 +21,9 @@ unsigned int _strspn(char *s, char *accept)
 		if (*(s + j) == *(accept + j))
 		{
 			prefix++;
-			break;
 		}
+		break;
 		j++;
 	}
-	return (prefix);
+	return (bytes);
 }
