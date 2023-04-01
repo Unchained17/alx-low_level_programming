@@ -13,4 +13,6 @@
 0x0B-malloc free
 0x0C-more malloc free
 0x0D-preprocessor
+0x0E-structures typedef
 0x0F-function pointers
+0x12-singly linked lists
