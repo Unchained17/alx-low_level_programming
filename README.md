@@ -15,4 +15,5 @@
 0x0D-preprocessor
 0x0E-structures typedef
 0x0F-function pointers
+0x10-variadic functions
 0x12-singly linked lists
