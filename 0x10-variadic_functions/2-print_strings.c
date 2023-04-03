@@ -12,11 +12,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list arg;
 	unsigned int i;
+	char *str;
 
 	va_start(arg, n);
 	for (i = 0; i < n; i++)
 	{
-		printf("%s", va_arg(arg, char *));
+		str = va_arg(arg, char *);
+		printf("%s", str);
 		if (i != (n - 1) && *separator != '\0')
 			printf("%s", separator);
 	}
