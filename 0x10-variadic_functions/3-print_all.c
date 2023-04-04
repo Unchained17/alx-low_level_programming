@@ -11,7 +11,7 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	char *sep, *string;
-	unsigned int j;
+	int j;
 
 	va_start(args, format);
 	sep = "";
