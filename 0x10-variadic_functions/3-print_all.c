@@ -14,9 +14,9 @@ void print_all(const char * const format, ...)
 	int j = 0;
 
 	va_start(args, format);
-	while (format != NULL && format[j] != '\0')
+	while (*(format + j) != '\0')
 	{
-		switch (format[j])
+		switch (*(format + j))
 		{
 			case 'c':
 				printf("%c", va_arg(args, int));
@@ -34,7 +34,7 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(args, double));
 				break;
 		}
-		if (format[j + 1] != '\0' && j != 0)
+		if (*(format + (j + 1)) != '\0' && j != 0)
 			printf(", ");
 		j += 1;
 	}
