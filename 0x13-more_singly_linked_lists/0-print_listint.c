@@ -7,12 +7,12 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	size_t n = 0;
+	size_t n;
 
-	do {
+	for (n = 0; h != NULL; n = n + 1)
+	{
 		printf("%d\n", (*h).n);
-		n += 1;
 		h = (*h).next;
-	} while (h != NULL);
+	}
 	return (n);
 }
