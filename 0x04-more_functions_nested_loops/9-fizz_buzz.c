@@ -9,9 +9,8 @@
  */
 int main(void)
 {
-	int i, n;
+	int i, n = 100;
 
-	n = 100;
 	for (i = 1; i <= n; i++)
 	{
 		if ((i % 3) == 0)
@@ -30,7 +29,7 @@ int main(void)
 		{
 			printf("%d", i);
 		}
-		if (n > 0 && i < n)
+		if (i > 0 && i < n)
 			printf(" ");
 	}
 	printf("\n");
